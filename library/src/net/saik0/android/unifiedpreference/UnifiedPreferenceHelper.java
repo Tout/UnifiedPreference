@@ -296,7 +296,7 @@ public class UnifiedPreferenceHelper {
 							R.styleable.PreferenceHeader_id,
 							(int) HEADER_ID_UNDEFINED);
 					TypedValue tv = sa
-							.peekValue(R.styleable.PreferenceHeader_title);
+							.peekValue(R.styleable.PreferenceHeader_item_title);
 					if (tv != null && tv.type == TypedValue.TYPE_STRING) {
 						if (tv.resourceId != 0) {
 							header.titleRes = tv.resourceId;
@@ -432,7 +432,7 @@ public class UnifiedPreferenceHelper {
 					TypedArray sa = mActivity.getResources().obtainAttributes(
 							attrs, R.styleable.PreferenceHeader);
 					TypedValue tv = sa
-							.peekValue(R.styleable.PreferenceHeader_title);
+							.peekValue(R.styleable.PreferenceHeader_item_title);
 					if (tv != null && tv.type == TypedValue.TYPE_STRING) {
 						if (tv.resourceId != 0) {
 							header.titleRes = tv.resourceId;
